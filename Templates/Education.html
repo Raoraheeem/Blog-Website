@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@600;700&family=Poppins:ital,wght@0,400;0,500;1,500&family=Righteous&family=Unbounded:wght@900&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<style>
+    .nav-item  a{
+        color:Black;
+        font-family: 'Oswald', sans-serif;
+        
+    }
+    .nav-item  a:hover{
+        background-color:#FE7B5A;
+        border-radius:3%;
+        width:120px;
+        
+    }
+    #signin:hover{
+        box-shadow: 2px 2px 2px 2px #c6c6c6;
+    }
+    
+    
+    #Startbtn:hover{
+        background-color:#FE7B5A;
+
+        
+    }
+    #getstart:hover{
+        color:#ffffff;
+
+    }
+</style>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-light" >
+        <div class="container-fluid col-mb-3">
+            <img src="/static/img/Blog logo.png" alt="" style="height: 40px;" class="position-absolute top-50 end-0 ms-4 translate-middle img-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse ms-5  " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item me-2">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+             
+            
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  History
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Asia</a>
+                      <li><a class="dropdown-item ms-4" href="#">India Sub-Continent</a></li>
+                      <li><a class="dropdown-item ms-4" href="#">Middle East</a></li>
+                      <li><a class="dropdown-item ms-4" href="#">Central Asia</a></li>
+                      <li><a class="dropdown-item ms-4" href="#">China</a></li></li>
+                    <li><a class="dropdown-item" href="#">Europe</a><li><a class="dropdown-item ms-4" href="#">England</a></li><li><a class="dropdown-item ms-4" href="#">Germany</a></li><li><a class="dropdown-item ms-4" href="#">France</a></li><li><a class="dropdown-item ms-4" href="#">Italy</a></li><li><a class="dropdown-item ms-4" href="#">Russia</a></li></li>
+                    <li><a class="dropdown-item" href="#">America</a>
+                      <li><a class="dropdown-item ms-2" href="#">North America</a></li><li><a class="dropdown-item ms-4" href="#">Canada</a></li><li><a class="dropdown-item ms-4" href="#">Mexico</a></li><li><a class="dropdown-item ms-2" href="#">South America</a></li></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Others</a></li>
+                    <li><a class="dropdown-item" href="#">Austalia</a>
+                  </ul>
+                </li>
+              <li class="nav-item dropdown me-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#FE7B5A;">
+                  Education
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">IT</a><li><a class="dropdown-item ms-4" href="#">ML</a></li><li><a class="dropdown-item ms-4" href="#">Python</a></li><li><a class="dropdown-item ms-4" href="#">Java</a></li><li><a class="dropdown-item ms-4" href="#">C++</a></li></li>
+                  <li><a class="dropdown-item" href="#">Physics</a></li>
+                  <li><a class="dropdown-item" href="#">Biology</a></li>
+                  <li><a class="dropdown-item" href="#">Mathematics</a></li>
+                  
+
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-5">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Food
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Mcdonalds</a><li><a class="dropdown-item ms-5" href="#">Burgers</a></li><li><a class="dropdown-item ms-5" href="#">Sandwich</a></li></li>
+                  <li><a class="dropdown-item" href="#">KFC</a><li><a class="dropdown-item ms-5" href="#">Pasta</a></li><li><a class="dropdown-item ms-5" href="#">French Fries</a></li></li>
+                  
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown me-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Travelling
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Asia</a>
+                    <li><a class="dropdown-item ms-4" href="#">India Sub-Continent</a></li>
+                    <li><a class="dropdown-item ms-4" href="#">Middle East</a></li>
+                    <li><a class="dropdown-item ms-4" href="#">Central Asia</a></li>
+                    <li><a class="dropdown-item ms-4" href="#">China</a></li></li>
+                  <li><a class="dropdown-item" href="#">Europe</a><li><a class="dropdown-item ms-4" href="#">England</a></li><li><a class="dropdown-item ms-4" href="#">Germany</a></li><li><a class="dropdown-item ms-4" href="#">France</a></li><li><a class="dropdown-item ms-4" href="#">Italy</a></li><li><a class="dropdown-item ms-4" href="#">Russia</a></li></li>
+                  <li><a class="dropdown-item" href="#">America</a>
+                    <li><a class="dropdown-item ms-2" href="#">North America</a></li><li><a class="dropdown-item ms-4" href="#">Canada</a></li><li><a class="dropdown-item ms-4" href="#">Mexico</a></li><li><a class="dropdown-item ms-2" href="#">South America</a></li></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Others</a></li>
+                  <li><a class="dropdown-item" href="#">Austalia</a>
+                </ul>
+              </li>
+             
+              
+            </ul>
+            <button type="button" class="btn me-5 " style="background-color:#FE7B5A;color:#ffffff;width:100px; border-radius:30px; font-family: 'Poppins', sans-serif;position:absolute;right:5%" id="signin">Sign in</button>
+            <button type="button" class="btn btn-outline-danger " style="Position:absolute;right: 20%; border-color:#FE7B5A;">Get Started</button>
+      </nav>
+
+
+      <h2 class="mt-5 ms-4" style="font-weight:bold; font-size:40px;">Programing</h2>
+
+      <div class="container text-center mt-5">
+        <div class="row">
+          {% for Programing in ProgramingData  %}
+          <div class="col-sm-4 d-flex justify-content-evenly">
+            <div class="card-body" style="position: relative; cursor: pointer;">
+                <img src="/media/{{Programing.Topic_img}}" alt="" class="img-fluid"style="position: relative;filter:brightness(75%);width:400px;height:250px;">
+                <h5 class="card-title" style="position:absolute;top:10%; color:white;left:33%">{{Programing.Topic_name}}</h5>
+                <p class="card-text"style="position:absolute;top:30%; color:white; font-family: 'Poppins', sans-serif;">{{Programing.Topic_desc}}</p>
+                <a href="#" class="btn btn-danger"style="position:absolute;top:70%;left:35%;">Learn More</a>
+            </div>
+           
+          </div>
+        {% endfor %}
+         
+        </div>
+    </div>
+
+
+
+    <h2 class="mt-5 ms-4" style="font-weight:bold; font-size:40px;">Physics</h2>
+
+      <div class="container text-center mt-5">
+        <div class="row">
+          {% for Physics in PhysicsData  %}
+          <div class="col-sm-4 d-flex justify-content-evenly ">
+            <div class="card-body" style="position: relative; cursor: pointer;">
+                <img src="/media/{{Physics.Topic_img}}" alt="" class="img-fluid"style="position: relative;filter:brightness(30%);width:400px;height:250px;">
+                <h5 class="card-title" style="position:absolute;top:10%; color:white;left:25%">{{Physics.Topic_name}}</h5>
+                <p class="card-text"style="position:absolute;top:30%; color:white; font-family: 'Poppins', sans-serif;">{{Physics.Topic_desc}}</p>
+                <a href="#" class="btn btn-danger mt-2"style="position:absolute;top:70%;left:35%;">Learn More</a>
+            </div>
+           
+          </div>
+          {% endfor %}
+         
+        </div>
+    </div>
+
+    <h2 class="mt-5 ms-4" style="font-weight:bold; font-size:40px;">Chemistry</h2>
+
+      <div class="container text-center mt-5">
+        <div class="row">
+          {% for Chemistry in ChemistryData  %}
+          <div class="col-sm-4 d-flex justify-content-evenly  ">
+            <div class="card-body" style="position: relative; cursor: pointer;">
+                <img src="/media/{{Chemistry.Topic_img}}" alt="" class="img-fluid"style="position: relative;filter:brightness(30%);width:400px;height:250px;">
+                <h5 class="card-title" style="position:absolute;top:10%; color:white;left:25%">{{Chemistry.Topic_name}}</h5>
+                <p class="card-text"style="position:absolute;top:30%; color:white; font-family: 'Poppins', sans-serif;">{{Chemistry.Topic_desc}}</p>
+                <a href="#" class="btn btn-danger"style="position:absolute;top:70%;left:35%;">Learn More</a>
+            </div>
+           
+          </div>
+          {% endfor %}
+         
+        </div>
+    </div>
+
+
+
+    
+    
+</body>
+</html>
